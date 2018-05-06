@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:text="Tên hoa: " />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/txt1"
+            android:layout_below="@+id/txt1"
+            android:text="Loại Hoa: " />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/txt2"
+            android:layout_below="@+id/txt2"
+            android:text="Giá: " />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/txt3"
+            android:layout_below="@+id/txt3"
+            android:text="Tình trạng: " />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:text="Số lượng: " />
+
+        <TextView
+            android:id="@+id/textView_name_detail_flower"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/txt2"
+            android:layout_toEndOf="@+id/txt1"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView_loai_detail_flower"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView_name_detail_flower"
+            android:layout_toEndOf="@+id/txt2"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView_gia_detail_flower"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txt2"
+            android:layout_toEndOf="@+id/txt3"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView_status_detail_flower"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView_gia_detail_flower"
+            android:layout_toEndOf="@+id/textView16"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView_count_detail_flower"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/textView16"
+            android:layout_toEndOf="@+id/textView16"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/textView16"
+            android:layout_below="@+id/textView16"
+            android:text="Môt tả: " />
+
+        <TextView
+            android:id="@+id/textView_mota_detail_flower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView16"
+            android:layout_toEndOf="@+id/textView23"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/Image_detail_flower"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/textView_name_detail_flower"
+            android:layout_marginStart="43dp"
+            android:layout_toEndOf="@+id/textView_status_detail_flower" />
+
+        <Button
+            android:id="@+id/button_mua_detail_flower"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/Image_detail_flower"
+            android:layout_alignTop="@+id/textView_status_detail_flower"
+            android:onClick="Buy"
+            android:text="buy" />
+
+        <TextView
+            android:id="@+id/textView_back_shopping_detail_flower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView23"
+            android:layout_below="@+id/textView23"
+            android:layout_marginTop="71dp"
+            android:onClick="BackShopping"
+            android:text="back to shopping" />
+
+        <Button
+            android:id="@+id/textView_goToCart_detail_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_back_shopping_detail_flower"
+            android:layout_toEndOf="@+id/textView_status_detail_flower"
+            android:onClick="GoToCart"
+            android:text="Go to Cart Shopping" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_flower_manager"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView_flowername"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/imageView_flower_manager"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/imageView_flower_manager"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_flowerprice"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/textView_flowername"
+            android:layout_below="@+id/textView_flowername"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/button_edit_flower_manager"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/textView_flowerprice"
+            android:layout_below="@+id/textView_flowerprice"
+            android:backgroundTint="#B3E5FC "
+            android:onClick="edit_info_flower"
+            android:text="EDIT" />
+
+        <Button
+            android:id="@+id/button_delete_flower_manager"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/button_edit_flower_manager"
+            android:layout_alignBottom="@+id/button_edit_flower_manager"
+            android:layout_toEndOf="@+id/button_edit_flower_manager"
+            android:backgroundTint="#B3E5FC "
+            android:onClick="delete"
+            android:text="DELETE"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

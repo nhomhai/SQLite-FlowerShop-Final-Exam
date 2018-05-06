@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            android:backgroundTint="#efd2e7">
+
+            <ImageView
+                android:id="@+id/imageView_image_cart_item"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_full" />
+
+            <TextView
+                android:id="@+id/textView_name_listitem_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/imageView_image_cart_item"
+                android:text="Name"
+                android:textAlignment="textEnd"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView_price_listitem_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/textView_name_listitem_cart"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/imageView_image_cart_item"
+                android:text="Price"
+                android:textAlignment="textEnd"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/button_add_listitem_cart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/textView_price_listitem_cart"
+                android:layout_marginStart="100dp"
+                android:layout_toEndOf="@+id/textView_price_listitem_cart"
+                android:background="@drawable/border_full"
+                android:gravity="center"
+                android:onClick="AddItemCart"
+                android:text="+"
+                android:textColor="#0e0e0e"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText_sl_listitem_cart"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/button_add_listitem_cart"
+                android:layout_toEndOf="@+id/button_add_listitem_cart"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="#111" />
+
+            <Button
+                android:id="@+id/button_sub_listitem_cart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/editText_sl_listitem_cart"
+                android:layout_toEndOf="@+id/editText_sl_listitem_cart"
+                android:background="@drawable/border_full"
+                android:onClick="SubItemCart"
+                android:text="-"
+                android:textColor="#0e0e0e"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button_remove_listitem_cart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:drawable/ic_delete"
+                android:backgroundTint="?attr/colorError"
+                android:onClick="Remove" />
+
+            <TextView
+                android:id="@+id/textView_total_cartItem"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/button_update_cartItem"
+                android:layout_alignBottom="@+id/button_update_cartItem"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/imageView_image_cart_item"
+                android:text="Total:"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/button_update_cartItem"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_alignEnd="@+id/button_sub_listitem_cart"
+                android:layout_below="@+id/button_add_listitem_cart"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_full"
+                android:backgroundTint="#cae694e4"
+                android:onClick="Update"
+                android:text="update"
+                android:textSize="9dp"
+                tools:layout_editor_absoluteX="204dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

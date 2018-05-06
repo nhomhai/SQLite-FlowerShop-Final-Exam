@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgHoa"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtTenHoa"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/imgHoa"
+            android:layout_below="@+id/imgHoa"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#F44336"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txtGia"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/txtTenHoa"
+            android:layout_below="@+id/txtTenHoa"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#F44336"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnChiTiet"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/txtStatus"
+            android:layout_below="@+id/txtStatus"
+            android:background="#C5CAE9 "
+            android:onClick="ChiTiet"
+            android:text="detail"/>
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtStatus"
+            android:layout_toEndOf="@+id/btnChiTiet"
+            android:background="@drawable/addtocart"
+            android:onClick="AddtoCart"/>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/txtGia"
+            android:layout_below="@+id/txtGia"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

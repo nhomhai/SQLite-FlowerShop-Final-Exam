@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "144115826431",
+    "firebase_url": "https://sqlite-74e5b.firebaseio.com",
+    "project_id": "sqlite-74e5b",
+    "storage_bucket": "sqlite-74e5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144115826431:android:6c4ef0a2168949b7",
+        "android_client_info": {
+          "package_name": "com.apphoa.tuanh.sqliteflowershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144115826431-kdttsfd6hhiob6s07tm8his64tdc9e95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apphoa.tuanh.sqliteflowershop",
+            "certificate_hash": "00ff79e38aa7ae03f1369c38a816823563ef3b1d"
+          }
+        },
+        {
+          "client_id": "144115826431-am2gqhjggvnkokriadv9mkf0e6q5bet7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRIGU29T0rWv5vQPb1wbDYcm5YgxAyy7U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144115826431-am2gqhjggvnkokriadv9mkf0e6q5bet7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144115826431:android:5566139c041f2acb",
+        "android_client_info": {
+          "package_name": "com.apphoa.tuanh.sqliteproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144115826431-am2gqhjggvnkokriadv9mkf0e6q5bet7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "144115826431-v8b53d0213oa1h1q63hahdl4scp7rsgt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apphoa.tuanh.sqliteproject",
+            "certificate_hash": "00ff79e38aa7ae03f1369c38a816823563ef3b1d"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRIGU29T0rWv5vQPb1wbDYcm5YgxAyy7U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144115826431-am2gqhjggvnkokriadv9mkf0e6q5bet7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border_full">
+
+        <ImageView
+            android:id="@+id/imageView_detail"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/textView_detail_tenhoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView_detail"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/imageView_detail"
+            android:text="Tên hoa" />
+
+        <TextView
+            android:id="@+id/textView_detail_loai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_detail_tenhoa"
+            android:layout_below="@+id/textView_detail_tenhoa"
+            android:text="Loại hoa" />
+
+        <TextView
+            android:id="@+id/textView_detail_soluong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_detail_tenhoa"
+            android:layout_marginStart="47dp"
+            android:layout_toEndOf="@+id/textView_detail_loai"
+            android:text="Số lượng: " />
+
+        <TextView
+            android:id="@+id/textView_detail_gia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_detail"
+            android:layout_alignStart="@+id/textView_detail_loai"
+            android:text="Giá hoa" />
+
+        <TextView
+            android:id="@+id/textView_detail_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_detail"
+            android:layout_alignStart="@+id/textView_detail_soluong" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

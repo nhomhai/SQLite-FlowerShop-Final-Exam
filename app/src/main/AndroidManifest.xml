@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apphoa.tuanh.projectandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoshop"
+        android:label="@string/app_name"
+        android:noHistory="true"
+        android:roundIcon="@drawable/logoshop"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".Mannager_AccountActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".ShoppingActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".EditInfoActivity" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".RecentOderActivity" />
+        <activity android:name=".StoredSystemActivity" />
+        <activity android:name=".Admin.FlowerManagerActivity" />
+        <activity android:name=".Admin.add_flowerActivity" />
+        <activity android:name=".Admin.edit_info_flower" />
+        <activity android:name=".Admin.AdminActivity" />
+        <activity android:name=".DetailOrderActivity"></activity>
+    </application>
+
+</manifest>

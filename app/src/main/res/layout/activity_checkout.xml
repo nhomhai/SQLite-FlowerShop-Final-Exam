@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apphoa.tuanh.projectandroid.CheckoutActivity"
+    android:background="@drawable/bac">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="@drawable/bac">
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logoshop"
+            android:popupBackground="#F8BBD0 "
+            android:visibility="visible"
+            android:onClick="Home"/>
+
+        <Button
+            android:id="@+id/btnUser"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/news"
+            android:onClick="User"/>
+        <Button
+            android:id="@+id/button_view_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="90dp"
+            android:layout_alignBottom="@+id/editText_view_search"
+            android:layout_toLeftOf="@+id/button_view_cart"
+            android:background="@drawable/search"
+            android:onClick="Search" />
+
+        <Button
+            android:id="@+id/button_view_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/imgLogo"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/cart"
+            android:onClick="cart" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editText_hoten_checkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="26dp"
+                    android:ems="10"
+                    android:hint="Họ và tên"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editText_diachi_checkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/editText_hoten_checkout"
+                    android:layout_below="@+id/editText_hoten_checkout"
+                    android:layout_marginTop="40dp"
+                    android:ems="10"
+                    android:hint="Địa chỉ nhận hoa"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editText_sdt_checkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/editText_diachi_checkout"
+                    android:layout_below="@+id/editText_diachi_checkout"
+                    android:layout_marginTop="32dp"
+                    android:ems="10"
+                    android:hint="Số điện thoại"
+                    android:inputType="textPersonName|number" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editText_sdt_checkout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:popupBackground="@android:color/holo_orange_light" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/editText_sdt_checkout"
+                    android:layout_below="@+id/editText_sdt_checkout"
+                    android:layout_marginTop="25dp"
+                    android:textSize="20dp"
+                    android:textColor="#111"
+                    android:text="PAYMENT METHODS" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    android:layout_alignEnd="@+id/spinner"
+                    android:layout_below="@+id/spinner"
+                    android:layout_marginTop="42dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:textColor="#E65100"
+                    android:textSize="16sp">
+                    <Button
+                        android:id="@+id/btnOrder"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@android:color/background_light"
+                        android:background="@drawable/border_right"
+                        android:text="order"
+                        android:onClick="order"/>
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:layout_alignBottom="@+id/btnOrder"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@android:color/background_light"
+                        android:background="@drawable/border_full"
+                        android:layout_marginEnd="11dp"
+                        android:text="Shopping"
+                        android:onClick="home"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

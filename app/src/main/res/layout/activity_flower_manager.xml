@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apphoa.tuanh.projectandroid.Admin.FlowerManagerActivity"
+    android:background="@drawable/bac">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#42A5F5 "
+            android:gravity="center"
+            android:text="FLOWER MANAGER"
+            android:textColor="#FF8A80"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner7"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#FFF176"
+                android:popupBackground="#FFF176"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="42dp" />
+
+            <Button
+                android:id="@+id/button_addflower"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="add_flower"
+                android:layout_weight="1"
+                android:background="@android:drawable/ic_input_add" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview_flower_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="80dp">
+
+        </ListView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

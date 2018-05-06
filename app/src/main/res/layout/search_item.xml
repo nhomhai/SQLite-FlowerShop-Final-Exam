@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/img_searchItem"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/bac" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/img_searchItem"
+        android:orientation="vertical"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_ten_searchItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/img_searchItem"
+        android:text="Tên Hoa" />
+
+    <TextView
+        android:id="@+id/textView_tinhtrang_searchItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_ten_searchItem"
+        android:layout_centerVertical="true"
+        android:text="Tình trạng" />
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

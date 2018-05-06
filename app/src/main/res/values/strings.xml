@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Flower</string>
+    <string name="search">Search ....</string>
+    <string name="menu_item_home">Home</string>
+    <string name="menu_item_about">About us</string>
+    <string name="menu_item_manager">Manager Account</string>
+    <string name="menu_item_map">Map</string>
+    <string name="menu_item_login">Login</string>
+    <string name="menu_item_logout">Logout</string>
+</resources>
